@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginpage"
+    android:gravity="center"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@+id/IV"
+        android:layout_marginBottom="6dp"
+        android:gravity="center"
+        android:text="WELCOME TO UNITED FABRICATION"
+        android:textSize="40dp"
+
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="95dp"
+        android:gravity="center"
+        android:text="We Are Providing Safety Doors,Windows,Grills,Reeling, Shaters,Get,etc..."
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/textView"
+        app:layout_constraintStart_toStartOf="@id/textView"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <ImageView
+        android:id="@+id/IV"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_above="@+id/textView2"
+        android:layout_marginBottom="57dp"
+        app:srcCompat="@drawable/wel1" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="210dp"
+        android:layout_height="28dp"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="123dp"
+        android:layout_marginRight="123dp"
+        android:layout_marginBottom="26dp"
+        android:progressBackgroundTint="@color/colorPrimaryDark" />
+
+</RelativeLayout>

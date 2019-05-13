@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginpage"
+    tools:context=".vender">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+        <android.inputmethodservice.ExtractEditText
+            android:layout_width="match_parent"
+            android:text="Vender"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/loginpage"
+            android:textColor="@android:color/background_light"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="60dp">
+
+
+    <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:gravity="center"
+            android:text="NAME"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:gravity="center"
+            android:text="ADDRESS"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:gravity="center"
+            android:text="COMPANY NAME"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:gravity="center"
+            android:text="E-MAIL ID"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:gravity="center"
+            android:text="CONTACT NUMBER"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/ed_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:ems="10"
+            android:hint="name"
+            android:inputType="textPersonName" />
+
+
+        <EditText
+            android:id="@+id/ed_contact_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="1"
+            android:ems="10"
+            android:hint="contact number"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="6"
+            android:layout_column="0"
+            android:gravity="center"
+            android:text="VENDER ID"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edvender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="6"
+            android:layout_column="1"
+            android:ems="10"
+            android:hint="vender id"
+            android:inputType="number" />
+
+
+        <EditText
+            android:id="@+id/ed_company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:ems="10"
+            android:hint="company name"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/ed_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:ems="10"
+            android:hint="address"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/ed_e_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:ems="10"
+            android:hint="e-mail id"
+            android:inputType="textEmailAddress" />
+
+    </GridLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp">
+
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/loginpage"
+            android:layout_marginRight="35dp"
+            android:layout_toStartOf="@+id/btviewall"
+            android:layout_toLeftOf="@+id/btviewall"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/btviewall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/loginpage"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="VIEW ALL" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_toStartOf="@+id/button4"
+            android:background="@drawable/loginpage"
+            android:layout_toLeftOf="@+id/button4"
+            android:text="Delete" />
+
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="420dp"
+    android:layout_marginLeft="60dp"
+    android:layout_height="wrap_content">
+
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/loginpage"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/loginpage"
+        android:layout_marginEnd="98dp"
+        android:layout_marginRight="98dp"
+        android:text="View" />
+</RelativeLayout>
+
+</RelativeLayout>
