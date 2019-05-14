@@ -22,7 +22,6 @@
         android:layout_marginTop="270dp"
         android:layout_marginRight="10dp">
 
-
         <EditText
             android:id="@+id/username"
             android:layout_width="wrap_content"
@@ -35,6 +34,8 @@
             android:textColor="@android:color/background_light"
             android:textSize="20dp"
             android:textStyle="bold" />
+
+
 
         <EditText
             android:id="@+id/password"
@@ -72,10 +73,12 @@
 
     </GridLayout>
 
+
    <LinearLayout
        android:layout_width="wrap_content"
+       android:padding="10dp"
        android:layout_marginTop="400dp"
-       android:layout_marginLeft="120dp"
+       android:layout_marginLeft="100dp"
        android:layout_height="wrap_content">
 
 
@@ -88,5 +91,6 @@
            android:text="LogIn" />
 
    </LinearLayout>
+
 
 </RelativeLayout>
