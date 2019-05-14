@@ -133,6 +133,7 @@ public class vender extends AppCompatActivity implements OnClickListener {
 
             case R.id.view:
                 if(ed6.getText().toString().trim().length()==0)
+
                 {
                     showmessage("Error", "Please enter Vender Id");
                     return;
